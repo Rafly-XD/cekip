@@ -37,6 +37,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* CRITICAL: ensure [hidden] wins over any display:flex/grid rule below */
+[hidden] {
+  display: none !important;
+}
+
 .font-mono,
 code {
   font-family: "JetBrains Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
